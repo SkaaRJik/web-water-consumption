@@ -6,10 +6,11 @@
         <meta name="description" content="Slide Down Box Menu with jQuery and CSS3" />
         <meta name="keywords" content="jquery, css3, sliding, box, menu, cube, navigation, portfolio, thumbnails"/>
 		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
-        <link rel="stylesheet" href="../static/css/style.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/menu.css" type="text/css" media="screen"/>
         <style>
 			body{
-				background:#333 url(../static/images/bg.jpg) repeat top left;
+				background:#333 url(images/bg.jpg) repeat top left;
 				font-family:Arial;
 			}
 			span.reference{
@@ -33,7 +34,7 @@
 			}
 			h1.title{
 				text-indent:-9000px;
-				background:transparent url(title.png) no-repeat top left;
+				background:transparent url(image/title.png) no-repeat top left;
 				width:633px;
 				height:69px;
 			}
@@ -46,7 +47,7 @@
 			<ul id="sdt_menu" class="sdt_menu">
 				<li>
 					<a href="#">
-						<img src="../static/images/2.jpg" alt=""/>
+						<img src="images/2.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">About me</span>
@@ -56,7 +57,7 @@
 				</li>
 				<li>
 					<a href="#">
-						<img src="../static/images/1.jpg" alt=""/>
+						<img src="images/1.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">Portfolio</span>
@@ -71,7 +72,7 @@
 				</li>
 				<li>
 					<a href="#">
-						<img src="../static/images/3.jpg" alt=""/>
+						<img src="images/3.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">Inspiration</span>
@@ -81,7 +82,7 @@
 				</li>
 				<li>
 					<a href="#">
-						<img src="../static/images/4.jpg" alt=""/>
+						<img src="images/4.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">Photos</span>
@@ -91,7 +92,7 @@
 				</li>
 				<li>
 					<a href="#">
-						<img src="../static/images/5.jpg" alt=""/>
+						<img src="images/5.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">Blog</span>
@@ -101,7 +102,7 @@
 				</li>
 				<li>
 					<a href="#">
-						<img src="../static/images/6.jpg" alt=""/>
+						<img src="images/6.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">Projects</span>
@@ -119,7 +120,7 @@
 
         <!-- The JavaScript -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
         <script type="text/javascript">
             $(function() {
 				/**
