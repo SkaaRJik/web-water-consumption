@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html >
 <html>
 <head>
     <title>Slide Down Box Menu with jQuery and CSS3</title>
@@ -17,14 +17,50 @@
         <div class="river-info">
             <h2>Данные о реке</h2>
             <div class="column">
-                <span>Средняя ширина реки(м.)</span><br>
-                <input type="text">
+                <span>Средняя ширина реки(м.)</span>
+                <input type="text" id="textFieldRiverWidth" required pattern="^[0-9]*[.,]?[0-9]+$">
             </div>
             <div class="column">
-                <span>Средняя ширина реки(м.)</span><br>
-                <input type="text">
+                <span>Средняя глубина реки(м.)</span>
+                <input type="text" id="textFieldRiverDepth" required pattern="^[0-9]*[.,]?[0-9]+$">
+            </div>
+            <div class="column">
+                <span>Средняя скорость реки(м/c)</span>
+                <input type="text" id="textFieldFlowSpeed" required pattern="^[0-9]*[.,]?[0-9]+$">
+            </div>
+            <div class="column">
+                <span>Коэффициент поперечной диффузии</span>
+                <input type="text" id="textFieldDiffusionCoef" required pattern="^[0-9]*[.,]?[0-9]+$">
+            </div>
+            <div class="column">
+                <span>Коэффициент неконсервативности</span>
+                <input type="text" id="textFieldNonConservatismCoef" value="0" required pattern="^[0-9]*[.,]?[0-9]+$">
+            </div>
+            <div class="column">
+                <span>Округление</span>
+                <input type="text" id="textFieldRound" value="4" required pattern="^[0-9]{1}$">
             </div>
         </div>
+        <div class="substance-info">
+            <h2>Информация о веществе</h2>
+            <div class="column">
+                <span>Наименование</span>
+                <input type="text" id="textFieldSubstance" required pattern="">
+            </div>
+            <div class="column">
+                <span>Доля в ЛПВ</span>
+                <input type="text" id="textFieldProportion" required pattern="^[0-9]*[.,]?[0-9]+$">
+            </div>
+            <div class="column">
+                <span>Значение CPDK</span>
+                <input type="text" id="textFieldLAC" required pattern="^[0-9]*[.,]?[0-9]+$">
+            </div>
+            <div class="column">
+                <span>Фоновая концентрация в реке</span>
+                <input type="text" id="textFieldConcentration" required pattern="^[0-9]*[.,]?[0-9]+$">
+            </div>
+        </div>
+
     </div>
 </div>
 
