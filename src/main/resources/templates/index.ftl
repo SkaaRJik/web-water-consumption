@@ -7,6 +7,11 @@
     <meta name="keywords" content="jquery, css3, sliding, box, menu, cube, navigation, portfolio, thumbnails"/>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+
+
+    <!-- The JavaScript -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 </head>
 
 <body>
@@ -60,13 +65,48 @@
                 <input type="text" id="textFieldConcentration" required pattern="^[0-9]*[.,]?[0-9]+$">
             </div>
         </div>
+        <div class="pipes-info-container">
+            <h2>Выпуска</h2>
+
+            <script>
+                var index = 1;
+
+                function recountIndexes() {
+                    index = 1;
+                    var elements = document.getElementsByClassName("pipe-info");
+                    Object.keys(elements).forEach(function (item) {
+                        elements[item].id="pipeInfo"+index;
+                        elements[item].innerHTML = "<h2>Параметры выпуска " + index + "<input type='button' value='X' class='delete_pipe_button' onclick='deletePipe(\""+elements[item].id+"\")'></h2>";
+                        index++;
+                    });
+
+                }
+
+                function deletePipe(element) {
+                    document.getElementById(element).remove();
+                    recountIndexes();
+                }
+
+                function createPipe(){
+                    var div = document.createElement("div");
+                    div.id = "pipeInfo"+index;
+                    div.class = "pipe-info";
+                    div.innerHTML = "<h2>Параметры выпуска " + index + "<input type='button' value='X' class='delete_pipe_button' onclick='deletePipe(\""+div.id+"\")'></h2>";
+                    document.getElementsByClassName("pipes-info-container")[0].appendChild(div);
+
+                    index++;
+                }
+            </script>
+
+            <input type="button" value="Добавить выпуск" id="create_pipe_button" onclick="createPipe()">
+        </div>
+
+
 
     </div>
 </div>
 
-<!-- The JavaScript -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
 
 </body>
 </html>
