@@ -90,7 +90,7 @@
                 function createPipe(){
                     var div = document.createElement("div");
                     div.id = "pipeInfo"+index;
-                    div.class = "pipe-info";
+                    div.className = "pipe-info";
                     div.innerHTML = "<h2>Параметры выпуска " + index + "<input type='button' value='X' class='delete_pipe_button' onclick='deletePipe(\""+div.id+"\")'></h2>";
                     document.getElementsByClassName("pipes-info-container")[0].appendChild(div);
 
